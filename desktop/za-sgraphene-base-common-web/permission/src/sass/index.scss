@@ -1,0 +1,40 @@
+﻿@charset "utf-8";
+@import "common/global";
+@import "main";
+@import "system";
+@import "user-management";
+@import "manage";
+
+
+.ant-form-explain{
+    line-height: 23px;
+}
+.file-management-upload-btn {
+    float: none;
+}
+
+.no-left {
+    .left-nav {
+        display: none;
+    }
+    .head-nav {
+        display: none;
+        .head-box {
+            padding-top: 18px;
+            margin-top: 0 !important;
+        }
+    }
+    .right-wrap {
+        margin-left: 0;
+        .page-box {
+            padding: 0;
+            .page-content {
+                margin: 0;
+                .search-result-back {
+                    // display: none !important;
+                    padding-top: 15px !important;
+                }
+            }
+        }
+    }
+}

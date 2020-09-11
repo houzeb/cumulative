@@ -1,0 +1,127 @@
+/* 产品管理通用查询块 */
+@row-maxWidth: 980px;
+@row-query-width: 980px;
+.query {
+    h2 {
+        margin: 0;
+        font-size: 16px;
+        font-weight: normal;
+        color: @primary-light;
+    }
+    .former {
+        // width: @row-maxWidth;
+        position: relative; // .ant-form-item{
+        //     display: inline-block;
+        //     width: @query-width;
+        //     margin: 20px 40px 0 0;
+        //     padding: 0;
+        //     &:nth-child(1), &:nth-child(2), &:nth-child(3) {
+        //         margin-top: 11px;
+        //     }
+        //     .ant-form-item-label {
+        //         label {
+        //             font-size: 14px;
+        //             color: @text-light;
+        //         }
+        //     }
+        // }
+        .ant-form-item.oneline {
+            display: block;
+            width: @query-width;
+            margin: 20px 40px 0 0;
+            padding: 0;
+            &:nth-child(1),
+            &:nth-child(2),
+            &:nth-child(3) {
+                margin-top: 11px;
+            }
+            .ant-form-item-label {
+                label {
+                    font-size: 12px;
+                    color: @primary-light;
+                }
+            }
+        } // .button-group {
+        //     display: inline-block;
+        //     vertical-align: bottom;
+        //     margin-right: -30px;
+        //     button {
+        //         margin-right: 35px;
+        //         &:last-child {
+        //             margin-right: 0;
+        //         }
+        //     }
+        // }
+    }
+    .former.col-3-item {
+        .ant-form-item {
+            display: inline-block;
+            width: @item-col-3-width;
+            margin: 20px 40px 0 0;
+            padding: 0;
+            &:nth-child(1),
+            &:nth-child(2),
+            &:nth-child(3) {
+                margin-top: 11px;
+            }
+            .ant-form-item-label {
+                label {
+                    font-size: 14px;
+                    color: @primary-light;
+                }
+            }
+        }
+        .ant-form-item.oneline {
+            display: block;
+            width: @query-width;
+            margin: 20px 40px 0 0;
+            padding: 0;
+            &:nth-child(1),
+            &:nth-child(2),
+            &:nth-child(3) {
+                margin-top: 11px;
+            }
+            .ant-form-item-label {
+                label {
+                    font-size: 12px;
+                    color: @primary-light;
+                }
+            }
+        }
+    }
+    .former.col-2-item {
+        .ant-form-item {
+            display: inline-block;
+            width: @item-col-2-width;
+            margin: 20px 40px 0 0;
+            padding: 0;
+            &:nth-child(1),
+            &:nth-child(2) {
+                margin-top: 11px;
+            }
+            .ant-form-item-label {
+                label {
+                    font-size: 14px;
+                    color: @primary-light;
+                }
+            }
+        }
+        .ant-form-item.oneline {
+            display: block;
+            width: @query-width;
+            margin: 20px 40px 0 0;
+            padding: 0;
+            &:nth-child(1),
+            &:nth-child(2),
+            &:nth-child(3) {
+                margin-top: 11px;
+            }
+            .ant-form-item-label {
+                label {
+                    font-size: 12px;
+                    color: @primary-light;
+                }
+            }
+        }
+    }
+}

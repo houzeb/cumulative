@@ -1,0 +1,21 @@
+.font-gray-666 {
+    color: #666;
+}
+.font-gray-999 {
+    color: #999;
+}
+.mr70 {
+    margin-right: 70px;
+}
+.mt30 {
+    margin-bottom: 30px;
+}
+//定义
+.font-loop(@n, @i:12) when (@i <= @n) {
+    .font-size-@{i} {
+        font-size: 0px + @i;
+    }
+    .font-loop(@n, (@i+1));
+}
+//调用
+.font-loop(24);

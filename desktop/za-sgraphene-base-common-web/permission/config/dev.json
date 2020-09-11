@@ -1,0 +1,15 @@
+{
+    "env": "test",
+    "port": 8080,
+    "sessionConfig": {
+        "secret": "za-core",
+        "domain": ".za-tech.net"
+    },
+    "mdmBackendHost": "15765-yfyb-sompo-sompo-za-graphene-mdm-backend.test.za-tech.net",
+    "i18nHost": "15823-yfyb-sompo-sompo-za-graphene-i18n.test.za-tech.net",
+    "ajaxHost": "15765-yfyb-sompo-sompo-za-graphene-permission-backend.test.za-tech.net",
+    "ssoHost": "15765-yfyb-sompo-sompo-za-graphene-nsso.test.za-tech.net",
+    "ssoHostProd": "15765-yfyb-sompo-sompo-za-graphene-nsso.test.za-tech.net",
+    "mdmHost": "15765-yfyb-sompo-sompo-za-graphene-mdm.test.za-tech.net",
+    "omsHost": "yfyb-sompo-za-graphene-sompo-common-web-oms.test.za-tech.net"
+}

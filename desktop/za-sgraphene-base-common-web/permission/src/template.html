@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>权限中心</title>
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="format-detection" content="telephone=no" />
+  
+</head>
+
+<body>
+
+  <div id='root'></div>
+  <script>
+    window.LangMessage = { __unload: true };
+    function jsonpcallback(result) {
+      result = result || {};
+      window.LangMessage = result.value || {};
+    }
+  </script>
+  <script id="langTag"></script>
+
+  <script>
+    var lang;
+    initLang();
+
+    function initLang() {
+      if (!getCookie("lang")) {
+        setCookie("lang", 'zh_CN');
+      }
+      setLangSrc();
+    }
+
+    function setLangSrc() {//这里有隐患 异步
+      var currentLang = getCookie("lang").replace('-', '_');
+      var src = "/guojihua/i18n/resource/download.json?namespace=common,permission_front&callback=jsonpcallback&lang=" + currentLang;
+      document.getElementById("langTag").src = src;
+    }
+
+    function getCookie(name) {
+      var cookie = document.cookie,
+        cookieName = encodeURIComponent(name) + '=',
+        start = cookie.indexOf(cookieName),
+        value = null;
+
+      if (start > -1) {
+        var cookieEnd = document.cookie.indexOf(';', start);
+        if (cookieEnd == -1) {
+          cookieEnd = document.cookie.length;
+        }
+        value = decodeURIComponent(document.cookie.substring(start + cookieName.length, cookieEnd));
+      }
+
+      return value;
+    }
+
+    function setCookie(name, value, param) {
+      var text = encodeURIComponent(name) + '=' + encodeURIComponent(value);
+      param = param || {};
+      param.path = param.path || "/";
+      var expires = param.expires;
+      if (expires instanceof Date) {
+        text += ';expires=' + expires.toGMTString();
+      } else if (typeof expires === "number") {
+        text += ';expires=' + new Date(expires).toGMTString();
+      }
+      if (param.path) {
+        text += ';path=' + param.path;
+      }
+      if (param.domain) {
+        text += ';domain=' + param.domain;
+      }
+      if (param.secure) {
+        text += ';secure';
+      }
+      document.cookie = text;
+    }
+
+
+  </script>
+
+
+</body>
+
+</html>

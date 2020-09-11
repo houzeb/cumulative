@@ -1,0 +1,26 @@
+{
+  "env": "publicPre",
+  "port": 8082,
+  "developMode":true,
+  "i18nHost":"stech-sgraphene-za-sgraphene-i18n.pre.za-tech.net",
+  "ajaxHost": "stech-sgraphene-za-sgraphene-query.pre.za-tech.net",
+  "getUserHost": "stech-sgraphene-za-sgraphene-permission.pre.za-tech.net",
+  "formulaHost": "stech-sgraphene-za-sgraphene-calculator.pre.za-tech.net",
+  "ssoHost":"stech-sgraphene-za-sgraphene-foundation.pre.za-tech.net",
+  "publicSsoHost": "sgraphene-foundation-pre.zhongan.io",
+  "priviledgesHost":"stech-sgraphene-za-sgraphene-foundation.pre.za-tech.net",
+  "omsHost": "stech-sgraphene-common-web-oms.pre.za-tech.net",
+  "customerDetailHost": "stech-sgraphene-za-sgraphene-customer.pre.za-tech.net",
+  "channelQueryHost": "yfyb-income-income-zatech-channel.pre.za-tech.net",
+  "goodsNameQueryHost": "yfyb-income-income-zatech-market.pre.za-tech.net",
+  "policyDetailHost": "stech-sgraphene-za-sgraphene-cdc.pre.za-tech.net",
+  "excelHost": "https://sgraphene-apigw-pre.zhongan.io/api/query/",
+  "ajaxPort":80,
+  "注解": {
+    "customerDetailHost": "客户查询详情",
+    "channelQueryHost": "保单查询 => 销售渠道 => 模糊搜索",
+    "goodsNameQueryHost": "保单查询 => 商品名称 => 模糊搜索",
+    "policyDetailHost": "保单详情/订单详情",
+    "excelHost": "导出excel网关地址"
+  }
+}

@@ -1,0 +1,95 @@
+@import '../../../style/var.less';
+.flow-container{
+    display: flex;
+    width: 980px;
+    height: 35px;
+    margin-top: 5px;
+    border-bottom: #D8D8D8 1px solid;
+    justify-content: center;
+    .flow-node{
+        width: 300px;
+        text-align: left;
+        position: relative;
+        .number-node{
+            width: 24px;
+            height: 24px;
+            line-height: 24px;
+            border-radius: 12px;
+            background: #999;
+            color: white;
+            text-align: center;
+            font-size: 12px;
+            margin: auto;
+            display: inline-block;
+            margin-right: 10px;
+            &.active{
+                background: @primary-color;
+            }
+        }
+        
+        p{
+            display: inline-block;
+            font-size: 14px;
+            color: #54636F;
+        }
+        &.active{
+            margin-bottom: -1px;
+            border-bottom: @primary-color 1px solid;
+            p{
+                color: @primary-color;
+            }
+        } 
+    }
+    &.horizen{
+        width: auto;
+        border-bottom: none;
+        .flow-node{
+            width:auto;
+            display: flex;
+            align-items: center;
+            .number-node{
+                width: 30px;
+                height: 30px;
+                line-height: 30px;
+                border-radius: 16px;
+                background: #fff;
+                color: rgba(0, 0, 0, 0.15);
+                text-align: center;
+                font-size: 16px;
+                margin: auto;
+                display: inline-block;
+                margin-right: 10px;
+                border: 1px solid rgba(0, 0, 0, 0.15);
+                &.active{
+                    background: @primary-color;
+                    color: #fff;
+                    border-color:  @primary-color;
+                }
+            }
+            p{
+                // font-family: SourceSansPro-Semibold;
+                font-size: 16px;
+                color: rgba(0,0,0,0.45);
+                margin: 0px;
+            }   
+            .lineae{
+                width: 192px;
+                height: 1px;
+                background-color: #e9e9e9;
+                margin: 0px 16px;
+            } 
+            &:last-child{
+                .lineae{
+                    display: none;
+                }
+            }
+            &.active{
+                border-bottom: none;
+                p{
+                    color: rgba(0,0,0,0.85);;
+                }
+            } 
+        }
+        
+    }
+}

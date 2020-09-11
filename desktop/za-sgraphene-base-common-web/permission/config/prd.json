@@ -1,0 +1,13 @@
+{
+    "env": "prd",
+    "port": 8080,
+    "sessionConfig": {
+        "secret": "za-core",
+        "domain": ".za-tech.net"
+    },
+    "mdmBackendHost": ":tech-atom-za-graphene-mdm-config.prd.za-tech.net",
+    "ajaxHost": "tech-atom-za-graphene-permission-config.prd.za-tech.net",
+    "ssoHost": "tech-atom-za-graphene-nsso.prd.za-tech.net",
+    "mdmHost": "tech-atom-za-graphene-mdm.prd.za-tech.net",
+    "omsHost": "yfyb-sompo-za-graphene-sompo-common-web-oms.test.za-tech.net"
+}

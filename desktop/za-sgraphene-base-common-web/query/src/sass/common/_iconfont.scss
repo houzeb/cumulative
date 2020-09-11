@@ -1,0 +1,59 @@
+﻿@charset "utf-8";
+
+@font-face {font-family: "icomoon";
+  src: url('#{$fonthost}icomoon.eot'); /* IE9*/
+  src: url('#{$fonthost}icomoon.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('#{$fonthost}icomoon.woff') format('woff'), /* chrome, firefox */
+  url('#{$fonthost}icomoon.ttf') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('#{$fonthost}icomoon.svg#icomoon') format('svg')/* iOS 4.1- */
+}
+
+.icomoon,[class*="za-icon-"]:after, [class*="za-icon-"]:before, [class^=za-icon-]:after, [class^=za-icon-]:before {
+  font-family:"icomoon" !important;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  vertical-align: middle;
+}
+
+.za-icon-money:before {
+  content: "\e900";
+}
+.za-icon-date:before {
+  content: "\e901";
+}
+.za-icon-attr:before {
+  content: "\e902";
+}
+.za-icon-info:before {
+  content: "\e903";
+}
+.za-icon-logo:before {
+  content: "\e904";
+   color: #fff;
+  font-size: 20px;
+}
+.za-icon-insure:before {
+  content: "\e905";
+  color: #fff;
+  font-size: 18px;
+}
+.za-icon-arrow-up:before {
+  content: "\e906";
+  color: #d8d8d8;
+  //font-size: 1px;
+}
+.za-icon-arrow-down:before {
+  content: "\e907";
+  color: #d8d8d8;
+  //font-size: 1px;
+}
+
+.za-icon-arrow-right:before {
+  content: "\e908";
+  font-size: 12px;
+}
+.za-icon-arrow-left:before {
+  content: "\e909";
+}
+

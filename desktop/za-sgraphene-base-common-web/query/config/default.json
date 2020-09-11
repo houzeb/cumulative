@@ -1,0 +1,25 @@
+{
+    "env": "development",
+    "port": 8082,
+    "developMode":true,
+    "i18nHost":"16427-stech-sgraphene-za-sgraphene-i18n.test.za-tech.net",
+    "ajaxHost": "16430-stech-sgraphene-za-sgraphene-query.test.za-tech.net",
+    "getUserHost": "16427-stech-sgraphene-za-sgraphene-permission.test.za-tech.net",
+    "formulaHost": "16424-stech-sgraphene-za-sgraphene-calculator.test.za-tech.net",
+    "ssoHost":"16427-stech-sgraphene-za-sgraphene-foundation.test.za-tech.net",
+    "priviledgesHost":"16427-stech-sgraphene-za-sgraphene-foundation.test.za-tech.net",
+    "omsHost": "16628-stech-sgraphene-common-web-oms.test.za-tech.net",
+    "customerDetailHost": "16430-stech-sgraphene-za-sgraphene-customer.test.za-tech.net",
+    "channelQueryHost": "16430-yfyb-income-income-zatech-channel.test.za-tech.net",
+    "goodsNameQueryHost": "16424-yfyb-income-income-zatech-market.test.za-tech.net",
+    "policyDetailHost": "16430-stech-sgraphene-za-sgraphene-cdc.test.za-tech.net",
+    "excelHost": "http://16553-stech-sgraphene-za-sgraphene-base-gateway.test.za-tech.net/api/query/",
+    "ajaxPort":80,
+    "注解": {
+      "customerDetailHost": "客户查询详情",
+      "channelQueryHost": "保单查询 => 销售渠道 => 模糊搜索",
+      "goodsNameQueryHost": "保单查询 => 商品名称 => 模糊搜索",
+      "policyDetailHost": "保单详情/订单详情",
+      "excelHost": "导出excel网关地址"
+    }
+}

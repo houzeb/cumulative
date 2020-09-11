@@ -1,0 +1,13 @@
+﻿@charset "utf-8";
+@import "common/global";
+@import "main";
+@import "system";
+@import "user-management";
+
+
+.ant-form-explain{
+    line-height: 23px;
+}
+.file-management-upload-btn {
+    float: none;
+}

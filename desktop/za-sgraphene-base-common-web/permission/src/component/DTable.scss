@@ -1,0 +1,48 @@
+table.c-table {
+    border-top: 1px solid #e9e9e9;
+    border-left: 1px solid #e9e9e9;
+    td, th {
+        border-right: 1px solid #e9e9e9;
+        border-bottom: 1px solid #e9e9e9;
+        word-break: break-all;
+        position: relative;
+        .error-message{
+            // position: absolute;
+            padding: 0 6px;
+            font-size: 10px;
+            font-weight: light;
+            bottom: 2px;
+            color: red;
+        }
+        .error {
+            border-color: red;
+            box-shadow: 0 0 4px rgba(255, 0, 0, 0.4);
+        }
+    }
+    td {
+        padding: 10px 8px 10px 8px;;
+        font-size: 12px;
+        vertical-align: top;
+    }
+    th {
+        padding: 10px 8px 10px 8px;
+    }
+    th{
+        background-color: #f7f7f7;
+        font-size: 12px;
+        font-weight: 500;
+        text-align: left;
+    }
+    .ant-input {
+        min-width: 80px;
+    }
+}
+.action {
+    margin-top: 10px;
+    & > button {
+        margin-right: 10px;
+    }
+}
+.c-table-con {
+    overflow-x: auto;
+}

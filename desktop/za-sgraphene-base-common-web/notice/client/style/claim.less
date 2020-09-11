@@ -1,0 +1,315 @@
+@item-width: 300px;
+
+.dialog {
+    h2.title {
+        position: relative;
+        .title-left{
+            font-size: 16px;
+            color: #54636F;
+        }
+        .title-right{
+            font-size: 14px;
+            color: #999;
+            position: absolute;
+            right: 0;
+        }
+    }
+}
+.medical{
+    h2.medical-msg{
+        margin: 0;
+        font-size: 16px;
+        font-weight: normal;
+        line-height: 44px;
+        color: @primary-light;
+    }
+    .add-reciever {
+        border-width: 1px;
+        border-style: dashed;
+        border-color: @border-light;
+        line-height: 32px;
+        text-align: center;
+        margin: 16px 0 0 0;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: all 0.4s ease;
+        span {
+            display: inline-block;
+            margin: 0 4px;
+            vertical-align: middle;
+            transition: all 0.4s ease;
+        }
+        &:hover {
+            border-color: @primary-color;
+            span {
+                color: @primary-color;
+            }
+        }
+    }
+}
+// 账单录入-表格标题
+.complex-table{
+    h4.title{
+        margin-bottom: 15px;
+        font-size: 14px;
+        color: #54636F;
+    }
+    .cost-sel{
+        width: 100px;
+    }
+}
+.medical-default{
+    border: 1px solid @border-light;
+    h4.title{
+        height: 44px;
+        background: #F6F6F6;
+        border-bottom: 1px solid #E4E6ED;
+        position: relative;
+        padding: 0 10px;
+        .iconfont{
+            color: #F74258;
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            margin-top: -18px;
+            font-size: 24px;
+        }
+        span{
+            font-size: 14px;
+            color: #54636F;
+            line-height: 44px;
+        }
+    }
+    .former{
+        padding: 0 0 30px 10px;
+    }
+}
+
+.calim-content{
+    margin-bottom: 100px;
+    .main-content{
+        min-width: 1200px;
+        margin: 0 auto 0 auto;
+        .gap-pad{
+            padding: 5px 30px 40px 30px;
+        }
+        .gap-info{
+            padding: 5px 30px 20px 30px;
+        }
+    }
+    .task-list-content {
+        width: 100%;
+        // 优化多选框高度
+        .ant-select-selection {
+            height: auto;
+        }
+
+        .ant-pagination {
+            text-align: right;
+            margin: 16px 0;
+        }
+    }
+    .task-select{
+        width: 90px;
+    }
+}
+/* 检索 清除 */
+.task-clear-search-content {
+    padding: 24px 50px 0 0;
+
+    .task-clear {
+        margin-right: 24px;
+
+        .ant-btn-outline {
+            border-color: #E4E6ED;
+        }
+    }
+}
+
+/* 影像资料管理 */
+.photo-content{
+    .main-content{
+        width: 1200px;
+        // height: 649px;
+        margin: 0 auto 0 auto;
+    }
+    // &>.block{
+    //     height: 100%;
+    // }
+    // .photo-block{
+    //     float: left;
+    // }
+    .photo-nav{
+        margin-top: 18px;
+        margin-bottom: 18px;
+        float: left;
+        width: 112px;
+        border-right: #E4E6ED solid 1px;
+        height: 545px;
+        div{
+            font-size: 15px;
+            line-height: 20px;
+            margin:12px 0;
+            cursor: pointer;
+            &.active{
+                text-decoration: underline;
+                color: @primary-color;
+            }
+        }
+    }
+    .photo-upload{
+        display: flex;
+    }
+}
+
+/* 备注框 */
+.query{
+    .former{
+        textarea.ant-input {
+            height: 88px;
+            width: 468px;
+            max-width: none;
+        }
+    }
+}
+
+/* 影像件上传样式 */
+.ant-upload-select-picture-card i {
+    font-size: 32px;
+    color: #999;
+}
+
+.ant-upload-select-picture-card .ant-upload-text {
+    margin-top: 8px;
+    color: #666;
+}
+.ant-upload-list-item-info::before{
+    display:none;
+}
+.ant-upload-list-picture-card .ant-upload-list-item-actions{
+    opacity: 1;
+    left: auto;
+    right: -28px;
+    top: -2px;
+    a{
+        display: none;
+    }
+    .anticon-delete{
+        opacity: 0;
+    }
+    &::before{
+        font-family:"iconfont" !important;
+        font-size:16px;
+        font-style:normal;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        content:"\e845";
+        cursor: pointer;
+        position: absolute;
+        z-index:-1;
+        background: white;
+        height: 21px;
+    }
+    // <Icon type="close-circle" theme="filled" />
+}
+
+// 表单-文字显示
+// .form-show{
+//     .ant-form-vertical .ant-form-item-label,
+//     .ant-col-24.ant-form-item-label,
+//     .ant-col-xl-24.ant-form-item-label{
+//         text-align: right;
+//         margin-right: 15px;
+//         label{
+//             color: #999;
+//             font-size: 15px;
+//         }
+//     }
+// }
+
+//数字文本框
+.dialog{
+    .former{
+        .ant-input-number, .ant-input-number-input{
+            width: @item-width;
+        }
+        .remarks-area{
+            // width: 640px;
+            // max-width: 640px;
+            height: 88px;
+        }
+    }
+}
+
+// 无边框标题
+.dialog{
+    h4.title {
+        margin: 0;
+        font-size: 14px;
+        font-weight: normal;
+        line-height: 44px;
+        color: @primary-light;
+        // border-bottom: 1px dashed #E4E6ED;
+    }
+}
+
+// flowCard-父盒子
+.flow-card{
+    padding: 40px 32px;
+}
+
+//保单信息的表格
+.policy-info-table{
+    .policy-row .ant-table-selection-column .ant-checkbox.ant-checkbox-disabled{
+        display: none;
+    }
+}
+// 多选框式样重置
+.cancel-reason{
+    line-height: 32px;
+    .ant-checkbox-group-item{
+        margin-right: 40px;
+    }
+}
+
+// form show 组件式样重置
+.former-info .formShow-dialog .ant-form-item,.former-info-two .formShow-dialog .ant-form-item{
+    display: flex;
+    min-width: 300px;
+    max-width: 300px;
+    .ant-form-item-control-wrapper{
+        flex: 1;
+        .ant-form-item-children span{
+            word-break: break-all;
+        }
+    }
+}
+
+//操作成功弹框 样式重置
+.ant-modal-wrap.save-success-alert .ant-modal-content{
+    .ant-modal-footer{
+        text-align: center;
+        padding-bottom: 24px;
+        padding-top: 0px;
+    }
+    .ant-modal-body .dialog{
+        margin-bottom: 30px;
+        text-align: center;
+        .imagePanel{
+            padding-top: 84px;
+            img{
+                width: 88px;
+                height: 88px;
+            }
+        }
+        .titlePanel{
+            padding: 16px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .titleText{
+            color: #999;
+            line-height: 24px;
+        }
+    }
+}

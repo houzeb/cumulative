@@ -1,0 +1,20 @@
+http
+
+起始行
+
+请求报文  GET /home HTTP/1.1
+即 方法+路径+http版本
+
+相应报文  HTTP/1.1 200 OK
+即http版本、状态码、原因
+
+GET HEAD POST PUT DELETE OPTIONS CONNECT TRACE
+
+GET和POST 区别
+缓存角度 GET请求会被浏览器主动缓存，留下历史记录；而POST 默认不会
+编码角度 GET只进行URL编码，只接收ASCII字符；而POST没有限制
+参数角度 GET一般放在URL中，不安全；POST放在请求中，更适合传输敏感信息
+幂等性角度 GET是幂等的；POST不是 （幂等表示执行相同的操作，结果也是相同）
+TCP角度 GET请求会把请求报文一次性发出去；而POST会分成两个TCP数据包，首先发header部分，如果服务器响应100(continue),再发body部分（火狐除外，它POST请求只发一次TCP包）
+
+

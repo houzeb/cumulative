@@ -1,0 +1,33 @@
+@import '~antd/dist/antd.less';
+@import 'var';
+@import 'reset';
+@import 'app';
+@import 'report';
+@import 'home';
+
+#topFrame {
+    min-height: 100%;
+    display: block;
+    body {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+#root {
+    .ant-layout {
+        height: calc(~"100vh - 90px") !important;
+        .wrapper {
+            max-height: calc(~"100vh - 90px");
+            overflow-y: auto;
+            overflow-x: hidden;
+            margin: 20px 0;
+        }
+        .content {
+            
+        }
+    }
+}
+body {
+    overflow-y: hidden;
+}

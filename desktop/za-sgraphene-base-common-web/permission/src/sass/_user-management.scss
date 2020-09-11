@@ -1,0 +1,66 @@
+@charset "utf-8";
+
+.middle-line{
+	padding: 32px 0;
+    background:rgb(240, 242, 245);;
+    margin: 0 -15px;
+	p {
+		opacity: .2;
+		margin: 0;
+		border-bottom: 1px solid #979797;
+	}
+	
+}
+.multiple-select {
+	overflow: hidden;
+	overflow-y: auto;
+	height: auto;
+    max-height: 140px;
+    vertical-align: middle;
+}
+
+.ant-form-item-control {
+	// line-height: normal!important;
+	word-break: break-word;
+}
+
+
+// 下拉框定位盒子宽度
+.ant-select-dropdown{
+	width: 300px;
+	min-width: 300px;
+}
+.former {
+	.ant-form-item {
+		display: inline-block;
+		.ant-form-item-label {
+			label {
+				font-size: 14px;
+				color: #54636f;
+			}
+		}
+		.ant-form-item-control-wrapper {
+			width: 300px;
+			.ant-input{
+				width: 300px;
+			}
+			.ant-select-selection{
+				width: 300px;
+			}
+		}
+	}
+    .button-group {
+        margin: 25px 35px 20px 0;
+        display: flex;
+        justify-content: flex-end;
+        button {
+            margin-left: 15px;
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+        .btn-shrink{
+            display: inline-block;
+        }
+    }
+}

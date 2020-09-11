@@ -1,0 +1,8 @@
+.DS_Store
+node_modules/
+.idea/
+build/
+dist/
+package-lock.json
+mocker/mockData.json
+

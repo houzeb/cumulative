@@ -1,0 +1,14 @@
+﻿{
+    "env": "development",
+    "port": 8888,
+    "sessionConfig": {
+        "secret": "za-core",
+        "domain": ".za-tech.net"
+    },
+    "mdmBackendHost": "16427-stech-sgraphene-za-sgraphene-foundation.test.za-tech.net",
+    "i18nHost": "16427-stech-sgraphene-za-sgraphene-i18n.test.za-tech.net",
+    "ajaxHost": "16427-stech-sgraphene-za-sgraphene-permission.test.za-tech.net",
+    "ssoHost": "16427-stech-sgraphene-za-sgraphene-foundation.test.za-tech.net",
+    "mdmHost": "16427-stech-sgraphene-za-sgraphene-foundation.test.za-tech.net",
+    "omsHost": "yfyb-sompo-za-graphene-sompo-common-web-oms.test.za-tech.net"
+}

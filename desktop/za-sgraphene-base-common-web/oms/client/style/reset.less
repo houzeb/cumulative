@@ -1,0 +1,109 @@
+/* 左侧菜单样式重置 */
+
+.ant-menu {
+    font-family: @menu-font; 
+    // .ant-menu-item {
+    //     height: 57px;
+    //     line-height: 57px;
+    //     font-size: 16px;
+    //     text-align: center;
+    //     padding-left: 0px;
+    // }
+    .ant-menu-item:after {
+        right: 203px; // top: 8px;
+        border-right-width: 5px; // height: 40px;
+    }
+}
+
+.ant-menu-inline>.ant-menu-submenu>.ant-menu-submenu-title {
+    line-height: 60px;
+    height: 60px;
+    font-size: 16px;
+    border-bottom: 0.05px solid #d9d9d9;
+}
+
+.ant-menu-inline-collapsed>.ant-menu-item,
+.ant-menu-vertical>.ant-menu-submenu>.ant-menu-submenu-title {
+    padding: 0 26px !important;
+}
+
+.ant-menu-vertical .ant-menu-submenu {
+    border-bottom: 0.05px solid #d9d9d9;
+    .ant-menu-submenu-title {
+        line-height: 60px;
+        height: 60px;
+    }
+}
+
+/* 主色调背景 */
+
+.bg-primary {
+    background: @primary-color;
+}
+
+/* 表单title样式重置 */
+
+.ant-form-item-label label {
+    color: @label;
+}
+
+/* 模态框重写 */
+
+.ant-modal-content {
+    border-radius: 8px;
+}
+
+.ant-confirm-body-wrapper {
+    text-align: center;
+    .ant-confirm-title {
+        font-size: 20px;
+    }
+    .ant-confirm-title:before {
+        display: inline-block;
+        content: '';
+        width: 10px;
+        height: 20px;
+        line-height: 20px;
+        background: @primary-color;
+        margin-right: 20px;
+        position: relative;
+        top: 3px;
+    }
+    .ant-confirm-body {
+        text-align: left;
+        .anticon {
+            display: none;
+        }
+        .ant-confirm-content {
+            height: 158px;
+            font-size: 20px;
+            margin-left: 10px;
+            padding-top: 50px;
+            text-align: center;
+        }
+    }
+    .ant-confirm-btns {
+        float: none;
+    }
+    .ant-btn {
+        width: 80px;
+    }
+}
+
+.ant-menu-submenu-title {
+    padding-top: 4px !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+.ant-menu-sub.ant-menu-inline>.ant-menu-item,
+.ant-menu-sub.ant-menu-inline>.ant-menu-submenu>.ant-menu-submenu-title {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+/* 去掉无数据table的下边框 */
+
+.ant-table-placeholder {
+    border: none;
+}

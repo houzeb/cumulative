@@ -1,0 +1,582 @@
+body {
+    color: @primary-light; // font-family: 'PingFang SC, Microsoft YaHei, Arial, sans-serif';
+}
+
+.ant-btn {
+    height: 32px;
+    color: @primary-light;
+    border-color: @primary-light;
+    border-radius: 4px;
+    padding: 0 16px;
+    font-size: 14px;
+    &:hover,
+    &:active,
+    &:focus {
+        background-color: @primary-light;
+        border-color: @primary-light;
+        color: #fff;
+    }
+    i.anticon {
+        font-size: 14px;
+    }
+}
+
+/* 左侧菜单样式重置 */
+
+.ant-menu {
+    font: @menu-font  !important;
+    .ant-menu-item {
+        height: 57px;
+        line-height: 57px;
+        font-size: 16px;
+        text-align: center;
+        padding-left: 0px;
+    }
+    .ant-menu-item:after {
+        right: 150px;
+        top: 8px;
+        border-right-width: 10px;
+        height: 40px;
+    }
+}
+
+/* 去掉菜单背景 */
+
+.ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected {
+    background: none;
+}
+
+.ant-menu-item:active,
+.ant-menu-submenu-title:active {
+    background: none;
+}
+
+.ant-menu-submenu-title {
+    .title {
+        margin-left: 10px;
+        ;
+    }
+}
+
+.graphere {
+    .ant-menu-sub {
+        .ant-menu-item {
+            font-size: 12px;
+            height: 30px;
+            line-height: 30px;
+            padding-left: 25px !important;
+        }
+    }
+}
+
+/* 主色调背景 */
+
+.bg-primary {
+    background: @primary-color;
+}
+
+/* 表单title样式重置 */
+
+.ant-form-item-label label {
+    color: @label;
+}
+
+/* 模态框重写 */
+
+.ant-modal-content {
+    border-radius: 8px;
+}
+
+.ant-confirm-body-wrapper {
+    text-align: center;
+    .ant-confirm-title {
+        font-size: 20px;
+    }
+    .ant-confirm-title:before {
+        display: inline-block;
+        content: '';
+        width: 10px;
+        height: 20px;
+        line-height: 20px;
+        background: @primary-color;
+        margin-right: 20px;
+        position: relative;
+        top: 3px;
+    }
+    .ant-confirm-body {
+        text-align: left;
+        .anticon {
+            display: none;
+        }
+        .ant-confirm-content {
+            height: 158px;
+            font-size: 20px;
+            margin-left: 10px;
+            padding-top: 50px;
+            text-align: center;
+        }
+    }
+    .ant-confirm-btns {
+        float: none;
+    }
+}
+
+/* 按钮type样式重写 */
+
+.ant-btn-primary {
+    border-color: @primary-color;
+    color: #fff;
+    &:active {
+        background-color: darken(@primary-color, 10%);
+    }
+    &:hover {
+        color: #fff;
+        background-color: lighten(@primary-color, 10%);
+        border-color: lighten(@primary-color, 10%);
+    }
+    &:focus {
+        border-color: @primary-color;
+        background-color: @primary-color;
+    }
+}
+
+.ant-btn-default {
+    border-color: @primary-light;
+    background-color: @primary-light;
+    color: #fff;
+    &:focus {
+        border-color: @primary-light;
+        background-color: @primary-light;
+        color: #fff;
+    }
+    &:hover {
+        color: #fff;
+        background-color: lighten(@primary-light, 10%);
+        border-color: lighten(@primary-light, 10%);
+    }
+    &:active {
+        background-color: darken(@primary-light, 10%);
+        border-color: darken(@primary-light, 10%);
+    }
+    &.ant-btn-clicked:after {
+        border: 0 solid @primary-light;
+    }
+}
+
+.ant-btn-danger {
+    border-color: @primary-danger;
+    background-color: @primary-danger;
+    color: #fff;
+    &:focus {
+        color: #fff;
+        border-color: @primary-danger;
+        background-color: @primary-danger;
+    }
+    &:hover {
+        color: #fff;
+        border-color: lighten(@primary-danger, 10%);
+        background-color: lighten(@primary-danger, 10%);
+    }
+    &:active {
+        color: #fff;
+        border-color: darken(@primary-danger, 10%);
+        background-color: darken(@primary-danger, 10%);
+    }
+}
+
+.ant-btn-outline {
+    color: @primary-light;
+    border-color: @primary-light;
+    background-color: transparent;
+    &:hover,
+    &:focus {
+        color: @primary-light;
+        border-color: @primary-light;
+        background-color: transparent;
+    }
+    &:active {
+        color: #fff;
+        border-color: @primary-light;
+        background-color: @primary-light;
+    }
+    &.ant-btn-clicked:after {
+        border: 0 solid @primary-light;
+    }
+}
+
+/* 按钮大小重写 */
+
+.ant-btn-sm {
+    height: 24px;
+    padding: 0 14px;
+}
+
+.ant-btn-lg {
+    height: 40px;
+    padding: 0 14px;
+}
+
+/* 按钮状态置灰 */
+
+.ant-btn-primary[disabled] {
+    border-color: @primary-color;
+    background-color: @primary-color;
+    opacity: 0.6;
+    color: #fff;
+    &:hover {
+        border-color: @primary-color;
+        background-color: @primary-color;
+        opacity: 0.6;
+        color: #fff;
+    }
+}
+
+.ant-btn-default[disabled] {
+    border-color: @primary-light;
+    background-color: @primary-light;
+    opacity: 0.6;
+    color: #fff;
+    &:hover {
+        border-color: @primary-light;
+        background-color: @primary-light;
+        opacity: 0.6;
+        color: #fff;
+    }
+}
+
+.ant-btn-danger[disabled] {
+    border-color: @primary-danger;
+    background-color: @primary-danger;
+    opacity: 0.6;
+    color: #fff;
+    &:hover {
+        border-color: @primary-danger;
+        background-color: @primary-danger;
+        opacity: 0.6;
+        color: #fff;
+    }
+}
+
+.ant-btn-outline[disabled] {
+    border-color: #ccc;
+    background-color: #EBF5FD;
+    color: #ccc;
+    &:hover {
+        border-color: #ccc;
+        background-color: #EBF5FD;
+        color: #ccc;
+    }
+}
+
+/* 表单项重写 */
+
+.ant-input,
+.ant-select-selection {
+    font: @global-font  !important;
+    border-radius: 0;
+    border-color: @border-default;
+    height: 30px;
+}
+
+/* 数字输入框重写 */
+
+.ant-input-number,
+.ant-input-number-input {
+    border-radius: 0;
+    border-color: @border-default;
+}
+
+/* 日期框重写 */
+
+.ant-calendar-picker {
+    width: 100%;
+}
+
+/* 表格组件样式重写 */
+
+.complex-table {
+    .ant-table {
+        border-width: 1px;
+        border-color: @border-light;
+        border-style: solid;
+        table {
+            border-radius: 0;
+            .ant-table-thead {
+                tr {
+                    th {
+                        background: @border-light;
+                        font-size: 14px;
+                        font-weight: normal;
+                        color: @primary-light;
+                        border-radius: 0;
+                    }
+                }
+            }
+            .ant-table-tbody {
+                tr {
+                    td {
+                        font-size: 14px;
+                        font-weight: normal;
+                        color: @primary-light;
+                    }
+                    &:last-child {
+                        td {
+                            border-bottom: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .ant-pagination-item {
+        border-color: #ECECEC;
+    }
+    .ant-pagination-item a {
+        color: #999;
+    }
+    .ant-pagination-item-active {
+        border-color: @primary-color;
+    }
+    .ant-pagination-item-active a {
+        color: @primary-color;
+    }
+}
+
+/* 表格组件样式重写 */
+
+.basic-table {
+    .ant-table-content {
+        border: none;
+    }
+    .ant-table-selection {
+        display: none;
+    }
+    .ant-table-thead>tr>th {
+        background: #fbfbfb;
+        color: #999;
+        padding: 5px 20px;
+        border-top: 1px solid #ECECEC;
+        border-bottom: 1px solid #ECECEC;
+        font-size: 12px;
+    }
+    .ant-table-tbody>tr>td {
+        background: #fff;
+        color: #54636F;
+        padding: 5px 20px;
+        border-bottom: 1px solid #ECECEC;
+        font-size: 12px;
+    }
+    .ant-table-thead>tr>th:first-child,
+    .ant-table-tbody>tr>td:first-child {
+        border-left: 1px solid #ECECEC;
+    }
+    .ant-table-thead>tr>th:last-child,
+    .ant-table-tbody>tr>td:last-child {
+        border-right: 1px solid #ECECEC;
+    }
+    .ant-table-tbody>tr>td:last-child {
+        text-align: right;
+        padding-right: 10px;
+    }
+    .ant-pagination-item {
+        border-color: #ECECEC;
+    }
+    .ant-pagination-item a {
+        color: #999;
+    }
+    .ant-pagination-item-active {
+        border-color: @primary-color;
+    }
+    .ant-pagination-item-active a {
+        color: @primary-color;
+    } // 删除icon，鼠标hover変白
+    .anticon-delete {
+        font-size: 16px;
+        float: left;
+    }
+}
+
+/* tab样式重写 */
+
+.ant-tabs {
+    background-color: #fff;
+    .ant-tabs-bar {
+        margin: 0;
+    }
+    .ant-tabs-nav {
+        .ant-tabs-tab {
+            padding: 14px 16px;
+        }
+    }
+    .ant-tabs-tab-prev-icon,
+    .ant-tabs-tab-next-icon {
+        background: #69BBF7;
+        width: 20px;
+        height: 20px;
+        border-radius: 20px;
+        color: #fff;
+        &:before {
+            font-size: 12px;
+            top: -1px;
+            position: relative;
+            left: -1px;
+        }
+    }
+    .ant-tabs-tab-next-icon {
+        &:before {
+            left: 1px;
+        }
+    }
+    .ant-tabs-tab-btn-disabled {
+        .ant-tabs-tab-prev-icon,
+        .ant-tabs-tab-next-icon {
+            background-color: #E4E6ED;
+        }
+    }
+}
+
+/* 日本本地化日期 样式重写 */
+
+.Japen-date {
+    .ant-input {
+        padding-right: 24px;
+    }
+    .date-input {
+        position: relative;
+        margin-top: 8px;
+    }
+    .date-input:after {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        visibility: visible;
+        pointer-events: none;
+        width: 32px;
+        height: 20px;
+        line-height: 20px;
+        margin-top: -10px;
+        text-align: center;
+        font-size: 14px;
+        -webkit-animation: zoomIn .3s cubic-bezier(.12, .4, .29, 1.46);
+        animation: zoomIn .3s cubic-bezier(.12, .4, .29, 1.46);
+        font-family: anticon;
+        text-rendering: optimizeLegibility;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        content: "";
+        z-index: 1;
+    }
+    .is-loading:after {
+        display: inline-block;
+        animation: loadingCircle 1s infinite linear;
+        content: "\E64D";
+        color: #1890ff;
+    }
+}
+
+/* 日本本地化邮编 样式重写 */
+
+.Japen-zipcode {
+    width: 200px;
+    .ant-input {
+        padding-right: 24px;
+        border-radius: 4px;
+    }
+    .input-content {
+        position: relative;
+    }
+    .has-error .ant-input {
+        border-color: #f5222d;
+    }
+    .has-icon:after {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        visibility: visible;
+        pointer-events: none;
+        width: 32px;
+        height: 20px;
+        line-height: 20px;
+        margin-top: -10px;
+        text-align: center;
+        font-size: 14px;
+        -webkit-animation: zoomIn .3s cubic-bezier(.12, .4, .29, 1.46);
+        animation: zoomIn .3s cubic-bezier(.12, .4, .29, 1.46);
+        font-family: anticon;
+        text-rendering: optimizeLegibility;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        content: "";
+        z-index: 1;
+    }
+    .has-error:after {
+        content: "\E62E";
+        color: #f5222d;
+        animation-name: diffZoomIn2 !important;
+    }
+    .has-success:after {
+        animation-name: diffZoomIn1 !important;
+        content: "\E630";
+        color: #52c41a;
+    }
+    .has-loading:after {
+        display: inline-block;
+        animation: loadingCircle 1s infinite linear;
+        content: "\E64D";
+        color: #1890ff;
+    }
+}
+
+hr {
+    margin: 40px 0;
+    border-color: #f0f0f0;
+    border-width: 1px;
+    border-style: dashed;
+}
+
+/* 分页器样式重写 */
+
+.ant-pagination {
+    font-size: 12px;
+    .ant-pagination-prev .ant-pagination-item-link:after,
+    .ant-pagination-next .ant-pagination-item-link:after {
+        font-weight: bold;
+    }
+    .ant-pagination-prev .ant-pagination-item-link,
+    .ant-pagination-next .ant-pagination-item-link {
+        width: 24px;
+        min-width: 24px;
+        height: 24px;
+        line-height: 24px;
+    }
+    .ant-pagination-prev .ant-pagination-item-link:after,
+    .ant-pagination-next .ant-pagination-item-link:after {
+        height: 24px;
+    }
+    .ant-pagination-prev,
+    .ant-pagination-next,
+    .ant-pagination-jump-prev,
+    .ant-pagination-jump-next {
+        width: 24px;
+        min-width: 24px;
+        height: 24px;
+        line-height: 24px;
+    }
+    .ant-pagination-item {
+        min-width: 24px;
+        height: 24px;
+        line-height: 24px;
+    }
+}
+
+.ant-pagination-options-quick-jumper {
+    input {
+        height: 24px;
+    }
+}
+
+/* 去掉无数据table的下边框 */
+
+.ant-table-placeholder {
+    border: none;
+}

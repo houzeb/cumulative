@@ -1,0 +1,304 @@
+@bottom-height: 80px;
+.query_new {
+    padding-left: 32px;
+    padding-top: 16px;
+    padding-bottom: 28px;
+    .former {
+        width: @row-maxWidth;
+        box-sizing: border-box;
+    }
+    h2 {
+        border-left: 4px solid @primary-color;
+        font-size: 20px;
+        height: 26px;
+        line-height: 26px;
+        padding-left: 8px;
+        margin-bottom: 0;
+    }
+    .ant-form {
+        font: @global-font;
+        margin-top: 23px;
+    }
+    .choose {
+        .ant-form-item {
+            margin-left: 0;
+        }
+    }
+    .ml40 {
+        .ant-form-item {
+            margin-left: 40px;
+        }
+    }
+    .ant-form-item {
+        margin-bottom: 16px;
+        display: inline-block;
+        .ant-form-item-label {
+            label {
+                font-size: 14px;
+                height: 20px;
+            }
+        }
+        .ant-form-item-control-wrapper .anticon.anticon-search {
+            svg {
+                margin-top: 9px;
+            }
+        }
+        .ant-form-item-control {
+            width: 300px;
+            height: 30px;
+            border-radius: 2px;
+        }
+    }
+    .ant-form-item:nth-child(3n + 1) {
+        margin-left: 0;
+    }
+    .button-group {
+        display: flex;
+        flex-direction: row-reverse;
+        width: @row-query-width;
+        button {
+            margin-left: 24px;
+        }
+    }
+}
+
+.table_new {
+    padding: 32px;
+    .query-page-bar {
+        margin-bottom: 15px;
+    }
+}
+
+.fixedBottomBar {
+    z-index: 2; // position: relative;
+    height: @bottom-height;
+    .float {
+        z-index: 1;
+        bottom: 0;
+        background: #fff;
+        width: 100%;
+        height: @bottom-height;
+        right: 0;
+        position: fixed;
+        padding-left: 208px;
+        .toolbar {
+            // border-left: 1px solid #E4E6ED;
+            height: 64px;
+            margin-top: 16px; // display: flex;
+            // align-items: center;
+            // flex-direction: row;
+            // justify-content: space-between;
+            button {
+                position: static;
+            }
+            .ant-btn {
+                height: 48px;
+                line-height: 48px;
+                &:nth-child(1) {
+                    margin-left: 33px;
+                    float: left;
+                }
+            }
+            div.fr {
+                float: right;
+                .ant-btn {
+                    margin-right: 24px;
+                }
+            }
+        }
+    }
+}
+
+.mt24 {
+    margin-top: 24px;
+}
+
+.mt16 {
+    margin-top: 16px;
+}
+
+.modify_block {
+    padding: 16px 24px 24px 32px;
+    background-color: #fff;
+    h3 {
+        font-size: 16px;
+        line-height: 22px;
+        height: 22px;
+        margin-bottom: 0;
+    }
+    .line {
+        margin: 15px 0;
+        height: 1px;
+        width: 100%;
+        background-color: #E4E6ED;
+        background-clip: content-box;
+    }
+    .info {
+        width: @row-maxWidth;
+        span {
+            font-size: 14px;
+            height: 20px;
+            line-height: 20px;
+            display: inline-block;
+        }
+        div {
+            display: inline-block;
+        }
+        div:nth-child(3n+1) {
+            width: 280px;
+            span:nth-child(1) {
+                width: 166px;
+                color: rgba(0, 0, 0, 0.4);
+                text-align: left;
+            }
+            span:nth-child(2) {
+                margin-left: 10px;
+                width: 100px;
+                color: rgba(0, 0, 0, 0.6);
+            }
+        }
+        div:nth-child(3n+2) {
+            span:nth-child(1) {
+                width: 160px;
+                color: rgba(0, 0, 0, 0.4);
+                text-align: left;
+            }
+            span:nth-child(2) {
+                // margin-left: 24px;
+                width: 160px;
+                color: rgba(0, 0, 0, 0.6);
+            }
+        }
+        div:nth-child(3n) {
+            span:nth-child(1) {
+                width: 180px;
+                color: rgba(0, 0, 0, 0.4);
+                text-align: left;
+            }
+            span:nth-child(2) {
+                margin-left: 24px;
+                width: 200px;
+                color: rgba(0, 0, 0, 0.6);
+            }
+        }
+    }
+    .ant-table-row {
+        .ant-select {
+            font: @global-font  !important;
+            width: 128px;
+            border-radius: 3px;
+        }
+        .ant-input-number,
+        .ant-input-number.ant-input-number-disabled {
+            width: 128px;
+            border-radius: 3px;
+        }
+        .ant-input {
+            width: 128px;
+            border-radius: 3px;
+        }
+    }
+    .input .ant-form-item {
+        margin-bottom: 17px;
+    }
+    .ant-form-item {
+        // margin-bottom: 0;
+        width: 300px;
+    }
+}
+
+.nowidth.modify_block {
+    .ant-form-item {
+        width: 250px;
+    }
+}
+
+.noborder {
+    .complex-table .ant-table {
+        border: none;
+    }
+}
+
+h4 {
+    font-size: 16px;
+    font-weight: normal;
+} // 处理表格列少的时候，最后一列靠右问题
+.little_table {
+    .basic-table .ant-table-tbody>tr>td:last-child {
+        text-align: left;
+    }
+}
+
+.diff {
+    color: #F5A623 !important;
+} //带搜索图标的选择框
+.search-select-dom {
+    position: relative;
+    z-index: 0;
+    .anticon-search {
+        position: absolute;
+        top: 2px;
+        z-index: 1;
+        font-size: 16px;
+        line-height: 30px;
+        left: 10px;
+        color: rgba(0, 0, 0, 0.40);
+    }
+    .ant-select-selection.ant-select-selection--single {
+        padding-left: 24px;
+    }
+}
+
+.jsdisplayblock {
+    display: block;
+}
+
+.jsdisplaynone {
+    display: none;
+}
+
+.js_button_display_none {
+    .button-group {
+        display: none !important;
+    }
+}
+
+.border_bottom_1_solid {
+    border-bottom: 1px solid #bfbfbf;
+}
+
+.registration {
+    .ant-table-tbody {
+        .ant-form-item {
+            margin-bottom: 0 !important;
+        }
+    }
+    h3 {
+        font-size: 18px;
+        padding-bottom: 6px;
+        text-indent: .5em;
+    } // .ant-table {
+    .block-registration {
+        padding-left: 32px;
+        padding-top: 10px;
+        padding-bottom: 20px;
+    }
+    .ant-select-selection,
+    .ant-select-dropdown-menu-item {
+        width: 300px;
+    } // }
+    .ant-select-150 {
+        .ant-select-selection,
+        .ant-select-dropdown-menu-item {
+            width: 150px;
+        }
+    }
+}
+
+.max980 {
+    max-width: 980px;
+}
+
+.mt20 {
+    margin-top: 20px;
+}

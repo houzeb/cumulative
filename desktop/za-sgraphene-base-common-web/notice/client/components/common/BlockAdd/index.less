@@ -1,0 +1,28 @@
+@import '../../../style/var.less';
+.add-reciever {
+    border-width: 1px;
+    border-style: dashed;
+    border-color: @border-light;
+    line-height: 32px;
+    text-align: center;
+    margin: 16px 0 0 0;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    span {
+        display: inline-block;
+        margin: 0 4px;
+        vertical-align: middle;
+        transition: all 0.4s ease;
+    }
+    &:hover {
+        border-color: @primary-color;
+        span {
+            color: @primary-color;
+        }
+    }
+    &.disabled{
+        color: #e4e6ed;
+        pointer-events: none;
+    }
+}

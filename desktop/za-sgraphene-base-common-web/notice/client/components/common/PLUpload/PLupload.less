@@ -1,0 +1,40 @@
+@lih: 34px;
+.pl_class {
+    button:nth-of-type(1) {
+        margin-right: 20px;
+    }
+    .list-unstyled {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        margin-top: 20px;
+        li {
+            width: 326px;
+            padding: 0;
+            margin: 0;
+            p {
+                padding-left: 20px;
+                line-height: @lih;
+                height: @lih;
+                margin: 0;
+                &:hover {
+                    background: #B2D3EB;
+                }
+                i {
+                    line-height: @lih;
+                    height: @lih;
+                    padding-right: 5px;
+                }
+                i[class*='anticon-close'] {
+                    float: right;
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+            }
+            .pull-right {
+                float: right;
+            }
+        }
+    }
+}

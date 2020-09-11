@@ -1,0 +1,24 @@
+@charset "utf-8";
+/* variable.css */
+$imghost:"/assets/images/h5/";
+$fonthost:"/assets/fonts/";
+/*Color*/
+//页面个性化颜色
+$diyColor: #14C287;;
+//价格字体颜色
+$colorPrice: #fd8012;
+
+$bgColor:#efeff4;
+
+$color:#333 #666 #999;
+$font-size-root: 0.24rem !default;
+$global-font: #{$font-size-root}/1.5  "Helvetica Neue",Helvetica,Arial,"Hiragino Sans GB", "\5FAE\8F6F\96C5\9ED1",sans-serif;
+
+//border
+@mixin border($dir) {
+  @if $dir == 'all' {
+    border:  1px solid #d8d8d8;
+  } @else {
+    border-#{$dir}: 1px solid #d8d8d8;
+  }
+}

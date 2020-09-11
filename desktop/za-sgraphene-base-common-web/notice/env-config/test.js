@@ -1,0 +1,48 @@
+const ENV = {
+    mode: "development",
+    port: 3002,
+    protocol: "http://",
+    domain: "za-tech.net",
+    sessionConfig: {
+        secret: "za-core",
+        domain: ".za-tech.net",
+        name: "_za_sso_session_",
+    },
+    api: {
+        i18n: "16449-yfyb-income-zatech-common-i18n.test.za-tech.net",
+        sso: "yfyb-income-income-zatech-foundation.test.za-tech.net",
+        ssoProd: "yfyb-income-income-zatech-foundation.test.za-tech.net",
+        oms_web: "yfyb-income-income-common-oms-web.test.za-tech.net",
+        amethystAdmin: "yfyb-income-income-zatech-amethyst-admin.test.za-tech.net",
+        foundation: "yfyb-income-income-zatech-foundation.test.za-tech.net",
+        integration: "yfyb-income-income-zatech-integration.test.za-tech.net",
+        permission: "yfyb-income-income-zatech-permission.test.za-tech.net",
+        claim: "yfyb-income-income-zatech-claim.test.za-tech.net",
+        calculator: "yfyb-income-income-zatech-calculator.test.za-tech.net",
+        market: "yfyb-income-income-zatech-market.test.za-tech.net",
+        product: "yfyb-income-income-zatech-product.test.za-tech.net",
+        bcp: "yfyb-income-income-zatech-bcp.test.za-tech.net",
+        cdc: "yfyb-income-income-zatech-cdc.test.za-tech.net",
+        customer: "yfyb-income-income-zatech-customer.test.za-tech.net",
+        notice: "yfyb-income-income-zatech-notice.test.za-tech.net",
+        policy: "yfyb-income-income-zatech-policy.test.za-tech.net",
+        policyBatch: "yfyb-income-income-zatech-policy-batch.test.za-tech.net",
+        posOnline: "yfyb-income-income-zatech-pos-online.test.za-tech.net",
+        query: "yfyb-income-income-zatech-query.test.za-tech.net",
+        query_web: 'yfyb-income-income-common-query-web.test.za-tech.net',
+    },
+    currentUrl: {
+        claim: '',
+        posOnline: '',
+        permission: '',
+        notice: '',
+        market: '',
+        product: '',
+        oms: '',
+        policy: '',
+        amethyst: '',
+        query: '',
+    }
+};
+
+module.exports = ENV;

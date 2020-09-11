@@ -1,0 +1,420 @@
+@charset "utf-8";
+
+/* 插件样式改动 start */
+.code-input input{
+    margin-top: -1px;
+}
+.bankErr + .ant-form-explain{
+    margin-left: 25%!important;
+    line-height: 30px!important;
+}
+//单选框样式
+.ant-radio-wrapper:hover .ant-radio-inner,
+.ant-radio:hover .ant-radio-inner,
+.ant-radio-input:focus + .ant-radio-inner {
+  border-color: #14C287!important;
+}
+.ant-radio-checked .ant-radio-inner, 
+.ant-radio-indeterminate .ant-radio-inner{
+    border-color: #14C287!important;
+}
+.ant-radio-checked:after {
+  border:1px solid #fff!important;
+}
+.ant-radio-inner:after{
+	background-color:#14C287!important;
+}
+//多选框样式
+.ant-checkbox-wrapper:hover .ant-checkbox-inner,
+.ant-checkbox:hover .ant-checkbox-inner,
+.ant-checkbox-input:focus + .ant-checkbox-inner {
+  border-color: #14C287!important;
+}
+.ant-checkbox-checked .ant-checkbox-inner, 
+.ant-checkbox-indeterminate .ant-checkbox-inner{
+    background-color: #14C287!important;
+    border-color: #14C287!important;
+}
+input[type="checkbox"][disabled] + .ant-checkbox-inner{
+    background-color:transparent!important;
+}
+.ant-checkbox-checked:after {
+  border: 1px solid #14C287!important;
+}
+
+//Tree 下的多选框
+.ant-tree-checkbox-wrapper:hover .ant-tree-checkbox-inner,
+.ant-tree-checkbox:hover .ant-tree-checkbox-inner,
+.ant-tree-checkbox-input:focus + .ant-tree-checkbox-inner {
+  border-color: #14C287!important;
+}
+.ant-tree-checkbox-checked .ant-tree-checkbox-inner, 
+.ant-tree-checkbox-indeterminate .ant-tree-checkbox-inner{
+    // background-color: #14C287!important;
+    border-color: #14C287!important;
+}
+.ant-tree-checkbox-checked:after {
+  border: 1px solid #14C287!important;
+}
+
+//nav select样式
+.right-wrap {
+	.head-box {
+		padding-right:30px;
+		.ant-select-selection{
+		    border:none !important;
+		    box-shadow:none !important;
+		    // font-family: PingFangSC-Regular;
+		    font-size: 14px;
+		    color: #8492A6;
+		    letter-spacing: -0.29px;
+		    .ant-select-selection-selected-value{
+		    	padding-right:12px!important;
+		    }
+		}  
+	}
+}
+//tabs
+.system-set .ant-tabs-nav-container{
+ 	//height: 36px;
+}
+.system-set .ant-tabs-nav .ant-tabs-tab-active{
+	color:#14C287;
+}
+.system-set .ant-tabs-nav .ant-tabs-tab:hover{
+	color:#14C287;
+}
+.system-set .ant-tabs-ink-bar{ 
+	background-color:#14C287;
+} 
+//表单错误提示
+.person-form .ant-form-explain{
+	line-height:28px;
+}
+.main-system{
+	.ant-form-item-control {
+		// line-height: normal!important;
+		word-break: break-word;
+		span{
+			min-width: 30px;
+		    max-width: 210px;
+		    display: inline-block;
+		    overflow: hidden;
+		    text-overflow: ellipsis;
+		    white-space: nowrap;
+		    vertical-align: -10px;
+		}
+	}
+}
+//FormItem下边距
+.finance-form .ant-form-item{
+	margin-bottom: 10px!important;
+}
+.passform .ant-form-item-control-wrapper input{
+    width: 300px;
+}
+.person-form .ant-form-item{
+	margin-bottom: 10px!important;
+}
+.person-form .ant-form-item-label label{
+	color:#54636f;
+	font-size: 14px;
+}
+//头像上传2
+.person-form .ant-upload.ant-upload-select-picture-card > .ant-upload{
+	padding: 0!important;
+}
+.person-form .ant-upload-list-picture .ant-upload-list-item, .ant-upload-list-picture-card .ant-upload-list-item{
+	padding: 0!important;
+}
+.person-form .ant-upload,
+.person-form .ant-upload-icon,
+.person-form .ant-upload-list-picture-card .ant-upload-list-item{
+  width: 200px!important;
+  height: 200px!important;
+}
+.person-form .ant-upload{
+  display: block;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.person-form .ant-upload img{  
+	width: 198px!important;
+	height: 198px!important;
+	margin-left:-2px;
+}
+.person-form .ant-upload-icon {
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 28px;
+  color: #999;
+}
+//上传样式
+.person-form .avatar-uploader,
+.person-form .avatar-uploader-trigger,
+.person-form .avatar {
+  width: 200px;
+  height: 200px;
+}
+.person-form .ant-upload-select {
+  display: block;
+  border: 1px dashed #666;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.person-form .avatar-uploader-trigger {
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 28px;
+  color: #999;
+}
+//分页页数绿色背景
+//  .ant-pagination-item:hover,
+//  .ant-pagination-item:focus{
+// 	color:#fff!important;
+// 	border-color:#14C287!important;
+// }
+//  .ant-pagination-item:hover a,
+//  .ant-pagination-item:focus a{
+// 	color:#14C287!important;
+// 	border-color:#14C287!important;
+// }
+//  .ant-pagination-item-active{
+// 	background-color:#14C287!important;
+// 	border-color:#14C287!important;
+// }
+//  .ant-pagination-item-active:hover,
+//  .ant-pagination-item-active:focus{
+// 	background-color:#14C287!important;
+// 	border-color:#14C287!important;
+// }
+//  .ant-pagination-item-active a,
+//  .ant-pagination-item-active:hover a,
+//  .ant-pagination-item-active:focus a{
+// 	color:#fff!important;
+// }
+
+//弹框垂直居中
+.vertical-center-modal {
+  text-align: center;
+  white-space: nowrap;
+}
+
+.vertical-center-modal:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  width: 0;
+}
+
+.vertical-center-modal .ant-modal {
+  display: inline-block;
+  vertical-align: middle;
+  top: 0;
+  text-align: left;
+}
+.mb0-item .ant-form-item{
+	margin-bottom: 0!important;
+}
+.model-form .ant-form-item{
+	margin-bottom: 15px!important;
+}
+.user-modal .ant-form-explain{
+	display:inline-block;
+	margin-left:10px;
+}
+//弹框表头背景
+.user-modal .ant-modal-header{
+	background-color:#d9d9d9!important;
+}
+.user-modal .ant-modal-close-x:before{
+    color: #fff;
+    font-size: 20px;
+    font-weight: normal;
+
+}
+.ant-pagination {
+	text-align:right;
+}
+//日期选择框-确定按钮
+.ant-calendar-ok-btn{
+	line-height:20px!important;
+}
+
+/* 插件样式改动 end */
+
+.pr35{
+	padding-right:35px;
+}
+.width75{
+	width:75px!important;
+}
+.width80{
+	width:80px!important;
+}
+.width100{
+	width:100px!important;
+}
+.width120{
+	width:120px!important;
+}
+.width130{
+	width:130px!important;
+}
+.width140{
+	width:140px!important;
+}
+.width150{
+	width:150px!important;
+}
+.width180{
+	width:180px!important;
+}
+.width190{
+	width:190px!important;
+}
+.width200{
+	width:200px!important;
+}
+.width205{
+	width:205px!important;
+}
+.width240{
+	width:240px!important;
+}
+.min-width100{
+	min-width: 100px;
+}
+.max-width80{
+	max-width: 80px;
+}
+.max-width200{
+	max-width: 200px;
+}
+.width255{
+	width:255px!important;
+}
+.height28{
+	height: 28px!important;
+}
+.height30{
+	height: 30px!important;
+}
+.height32{
+	height: 32px!important;
+}
+.label75 .ant-form-item-label{
+	// width:75px!important;
+}
+.label85 .ant-form-item-label{
+	width:85px!important;
+}
+.label100 .ant-form-item-label{
+	width:100px!important;
+}
+.label95 .ant-form-item-label{
+	width:95px!important;
+}
+.label120 .ant-form-item-label{
+	width:120px!important;
+}
+.label300 .ant-form-item-label{
+	width:120px!important;
+}
+//面包屑导航背景
+.search-result-back {
+    background-color: rgb(240, 242, 245);;
+}
+//tabs父DIV
+.system-set{
+	padding: 10px 50px 0 50px;
+}
+
+//按钮边框
+.borderColor{
+    border-color:#14C287!important;
+}
+// 按钮disable样式
+.ant-btn[disabled].diy_background {
+	background-color: #f7f7f7 !important;
+    border-color: #d9d9d9 !important
+}
+//按钮样式
+.system-btn {
+    // width: 100px;
+    height: 30px;
+    margin-left: 10px;
+}
+//文本框样式
+.system-input {
+    height: 32px;
+    width: 200px;
+    display: inline-block !important;
+    &:hover {
+        border-color: $diyColor;
+    }
+    &:focus {
+        border-color: $diyColor;
+        box-shadow: 0 0 4px $diyColor;
+    }
+}
+
+
+.user-management{
+	padding: 20px 15px 50px 15px;
+    overflow: hidden;
+    .ant-form-item-label {
+        color: #54636f;
+        font-size: 14px;
+        text-align: left;
+    }
+}
+.product-filter-btn {
+    // width: 60px;
+    padding: 0 16px;
+    // margin:2px 0 0 10px;
+}
+.ant-table-wrapper table {
+	th{
+		text-align: center!important;
+	}
+	td{
+		text-align: center;
+	}
+} 
+//表格内绿色字体
+.greenFont tr td a{
+    color: $diyColor;
+    margin: 0 6px;
+} 
+
+
+.product-save-btn {
+    // width: 60px;
+    height: 30px;
+}
+.ant-checkbox-wrapper {
+    * {
+        vertical-align: middle;
+    }
+    span{
+        display: inline-block;
+    }
+}
+.ant-tree-checkbox-indeterminate .ant-tree-checkbox-inner:after {
+    background-color: #14C287 !important;
+}
+.ant-tree-checkbox-checked .ant-tree-checkbox-inner {
+    background-color: #14C287 !important;
+}
+.head-box .ant-select-selection {
+    width: 80px;
+}
+.button-offset {
+    margin-top: 44px;
+}
+.ant-table-thead > tr > th {
+    color: lighten(#000, 40) !important;
+    font-weight: normal !important;
+}

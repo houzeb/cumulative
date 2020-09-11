@@ -1,0 +1,166 @@
+.layout {
+    min-height: 100vh;
+    min-width: 1200px;
+    background: @bg1;
+    font: @global-font;
+    .header {
+        background: @white;
+        height: 50px;
+        line-height: 50px;
+        padding: 0 20px;
+        font-size: 14px;
+        .logo_div {
+            width: 188px;
+            margin-left: 0;
+            float: left;
+        }
+        .trigger_div {
+            background-color: rgb(235, 245, 253);
+            width: 50px;
+            height: 50px;
+            padding: 13px;
+            padding-top: 5px;
+            float: left;
+        }
+        .logo {
+            display: inline-block;
+            vertical-align: middle;
+            font-size: 20px;
+        }
+        .title {
+            font-size: 18px;
+            color: @primary-light;
+            margin-left: 10px;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .trigger {
+            // margin-left: 25px;
+            color: @primary-color;
+            cursor: pointer;
+            font-size: 24px;
+        }
+        &-right {
+            float: right;
+            .ant-select-selection {
+                font: @global-font  !important;
+                border: none;
+                font-size: 14px;
+                box-shadow: none;
+            }
+        }
+        .user {
+            margin-left: 30px;
+            .avatar {
+                width: 30px;
+                height: 30px;
+                border-radius: 15px;
+                margin-right: 10px;
+            }
+        }
+        .logout {
+            color: @primary-light;
+            display: inline-block;
+            font-size: 14px;
+            height: 25px;
+            border: 1px solid @primary-light;
+            border-radius: 4px;
+            margin-left: 30px;
+            &:hover {
+                color: @primary-light;
+                background-color: transparent;
+            }
+        }
+        .ant-btn-clicked:after {
+            border: none;
+        }
+    }
+    .sider {
+        background: none;
+        min-height: 90vh;
+        background-color: #fff;
+        .ant-menu {
+            border-right: none;
+            .ant-menu-item {
+                margin: 0;
+                border-top: 1px solid @border-default;
+                height: auto;
+                padding: 0;
+                text-align: left;
+                a {
+                    display: block;
+                    span {
+                        word-break: break-word;
+                        word-wrap: break-word;
+                        white-space: pre-wrap;
+                        line-height: 1;
+                        // width: 98px;
+                    }
+                }
+                &:last-child {
+                    border-bottom: 1px solid @border-default;
+                }
+                &:after {
+                    border-right-width: 6px;
+                    right: 203px;
+                    top: 0;
+                    height: 60px;
+                }
+                &.ant-menu-item-selected {
+                    background: lighten(@primary-color, 48%);
+                    &>a {
+                        padding-left: 4px solid green;
+                        color: @primary-light;
+                    }
+                }
+                /* 左侧导航iconfont和标题 */
+                &>a>i,
+                &>a>span {
+                    display: inline-block;
+                    vertical-align: middle;
+                }
+                /* 单独设置iconfont字体大小 */
+                &>a>i {
+                    font-size: 24px;
+                    margin-right: 14px;
+                }
+            }
+        }
+    }
+    .content {
+        margin: 20px;
+        min-width: 880px;
+        .block {
+            background-color: #fff;
+            margin-bottom: 10px;
+            &.block-default {
+                padding: 20px 18px;
+            }
+            &.block-fluid {
+                width: 100%;
+            }
+        }
+    }
+}
+
+/* 百分比100% */
+
+.container-full {
+    width: 100%;
+}
+
+/* iframe中隐藏header和菜单 */
+
+.no-left {
+    &.layout {
+        .content {
+            margin: 0;
+        }
+    }
+    .ant-layout-header {
+        display: none;
+    }
+    .ant-layout-sider {
+        display: none;
+    }
+}

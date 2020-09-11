@@ -1,0 +1,445 @@
+/* 产品管理通用查询块 */
+
+@row-maxWidth: 1034px;
+
+@item-width: 300px;
+
+/* 查询表单每行3列表单项目宽度 */
+@item-col-3-width: 300px;
+
+/* 查询表单每行2列表单项目宽度 */
+@item-col-2-width: 400px;
+
+@btn-margin-left: 30px;
+
+/* 高度700的模态框样式 */
+.dialog.h700 {
+    position: relative;
+    height: 700px;
+    .buttonBar {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        button {
+            margin-left: @btn-margin-left;
+        }
+    }
+}
+
+.dialog {
+    h2.title {
+        margin: 0;
+        font-size: 16px;
+        font-weight: normal;
+        line-height: 44px;
+        color: @primary-light;
+        font-weight: bold;
+        border-bottom: 1px dashed #E4E6ED;
+    }
+    h2.before {
+        margin: 0;
+        font-size: 18px;
+        font-weight: normal;
+        line-height: 44px;
+        color: @primary-light;
+        font-weight: bold;
+        span{
+            padding-left: 8px;
+        }
+        &:before{
+            content: '';
+            display: inline-block;
+            width: 4px;
+            height: 20px;
+            background: #14c287;
+            vertical-align: -4px;
+        }
+    }
+    .basic-table,
+    .complex-table {
+        margin-top: 20px;
+    }
+    .former {
+        // width: @row-maxWidth;
+        position: relative;
+        .ant-form-item {
+            display: inline-block;
+            width: @item-width;
+            margin: 20px 40px 0 0;
+            padding: 0;
+            .ant-form-item-label {
+                label {
+                    font-size: 14px;
+                    color: @primary-light;
+                }
+            }
+            .ant-select {
+                width: @item-width;
+            }
+            .ant-input-group-wrapper {
+                .ant-input-group-addon {
+                    background-color: #fff;
+                }
+                .ant-select {
+                    width: 120px;
+                }
+            }
+        }
+        .ant-form-item.oneline{
+            display: block;
+            margin: 20px 40px 0 0;
+            width: 100%;
+            padding: 0;
+            &:nth-child(1), &:nth-child(2), &:nth-child(3) {
+                margin-top: 11px;
+            }
+            .ant-form-item-label {
+                label {
+                    font-size: 12px;
+                    color: @primary-light;
+                }
+            }
+        }
+        .wd980 {
+            width: 980px;
+        }
+        .h120 {
+            height: 120px;
+        }
+        .toolbar {
+            margin-top: 20px;
+            button {
+                margin-right: 30px;
+                border: 1px solid #54636F;
+                border-radius: 4px;
+            }
+        }
+        .buttonBar {
+            position: absolute;
+            bottom: 0;
+            right: @row-maxWidth - 980px;
+            button {
+                margin-left: @btn-margin-left;
+            }
+        }
+        .buttonBar_left_1 {
+            .buttonBar_left_count(1)
+        }
+        .buttonBar_left_2 {
+            .buttonBar_left_count(2)
+        }
+        .buttonBar_left_count(@count: 1) {
+            position: absolute;
+            bottom: 5px;
+            left: @item-width * @count;
+            button {
+                margin-left: 30px;
+            }
+        }
+        .buttonBar_left {
+            margin-top: 20px;
+        }
+        .buttonBar_left_three {
+            margin-top: 20px;
+            button {
+                margin-right: 30px;
+            }
+        }
+    }
+    .former-two {
+        width: @row-maxWidth/3*2;
+        position: relative;
+        .ant-form-item {
+            display: inline-block;
+            width: @item-width;
+            margin: 20px 40px 0 0;
+            padding: 0;
+            .ant-form-item-label {
+                label {
+                    font-size: 14px;
+                    color: @primary-light;
+                }
+            }
+            .ant-select {
+                width: @item-width;
+            }
+            .ant-input-group-wrapper {
+                .ant-input-group-addon {
+                    background-color: #fff;
+                }
+                .ant-select {
+                    width: 120px;
+                }
+            }
+        }
+        .ant-form-item.oneline{
+            display: block;
+            margin: 20px 40px 0 0;
+            width: 100%;
+            padding: 0;
+            &:nth-child(1), &:nth-child(2), &:nth-child(3) {
+                margin-top: 11px;
+            }
+            .ant-form-item-label {
+                label {
+                    font-size: 12px;
+                    color: @primary-light;
+                }
+            }
+        }
+        .wd980 {
+            width: 980px;
+        }
+        .h120 {
+            height: 120px;
+        }
+        .toolbar {
+            margin-top: 20px;
+            button {
+                margin-right: 30px;
+                border: 1px solid #54636F;
+                border-radius: 4px;
+            }
+        }
+        .buttonBar {
+            position: absolute;
+            bottom: 0;
+            right: @row-maxWidth - 980px;
+            button {
+                margin-left: @btn-margin-left;
+            }
+        }
+        .buttonBar_left_1 {
+            .buttonBar_left_count(1)
+        }
+        .buttonBar_left_2 {
+            .buttonBar_left_count(2)
+        }
+        .buttonBar_left_count(@count: 1) {
+            position: absolute;
+            bottom: 5px;
+            left: @item-width * @count;
+            button {
+                margin-left: 30px;
+            }
+        }
+        .buttonBar_left {
+            margin-top: 20px;
+        }
+        .buttonBar_left_three {
+            margin-top: 20px;
+            button {
+                margin-right: 30px;
+            }
+        }
+    }
+    .former.col-3-item{
+        .ant-form-item{
+            display: inline-block;
+            width: @item-col-3-width;
+            margin: 20px 40px 0 0;
+            padding: 0;
+            &:nth-child(1), &:nth-child(2), &:nth-child(3) {
+                margin-top: 11px;
+            }
+            .ant-form-item-label {
+                label {
+                    font-size: 14px;
+                    color: @primary-light;
+                }
+            }
+            .ant-select {
+                width: @item-width;
+            }
+            .ant-input-group-wrapper {
+                .ant-input-group-addon {
+                    background-color: #fff;
+                }
+                .ant-select {
+                    width: 120px;
+                }
+            }
+        }
+        .ant-form-item.oneline{
+            display: block;
+            margin: 20px 40px 0 0;
+            width: 100%;
+            padding: 0;
+            &:nth-child(1), &:nth-child(2), &:nth-child(3) {
+                margin-top: 11px;
+            }
+            .ant-form-item-label {
+                label {
+                    font-size: 12px;
+                    color: @primary-light;
+                }
+            }
+        }
+    }
+
+    .former.col-2-item{
+        .ant-form-item{
+            display: inline-block;
+            width: @item-col-2-width;
+            margin: 20px 40px 0 0;
+            padding: 0;
+            &:nth-child(1), &:nth-child(2) {
+                margin-top: 11px;
+            }
+            .ant-form-item-label {
+                label {
+                    font-size: 14px;
+                    color: @primary-light;
+                }
+            }
+            .ant-select {
+                width: @item-col-2-width;
+            }
+            .ant-input-group-wrapper {
+                .ant-input-group-addon {
+                    background-color: #fff;
+                }
+                .ant-select {
+                    width: 120px;
+                }
+            }
+        }
+        .ant-form-item.oneline{
+            display: block;
+            margin: 20px 40px 0 0;
+            width: 100%;
+            padding: 0;
+            &:nth-child(1), &:nth-child(2), &:nth-child(3) {
+                margin-top: 11px;
+            }
+            .ant-form-item-label {
+                label {
+                    font-size: 12px;
+                    color: @primary-light;
+                }
+            }
+        }
+    }
+
+    .former-info {
+        width: @row-maxWidth;
+        position: relative;
+        .ant-form-item {
+            display: inline-block;
+            width: @item-width;
+            margin: 20px 40px 0 0;
+            padding: 0;
+            font-size: 14px;
+            .ant-form-item-label {
+                text-align: right;
+                label {
+                    color: @primary-light;
+                }
+            }
+            .ant-form-item-control-wrappe{
+                .ant-form-item-control{
+                    text-align: left;
+                    color: rgba(0,0,0,0.80);
+                }
+            }
+        }
+    }
+    .former-info-two{
+        width: @row-maxWidth/3*2;
+        position: relative;
+        .ant-form-item {
+            display: inline-block;
+            width: @item-width;
+            margin: 20px 40px 0 0;
+            padding: 0;
+            font-size: 14px;
+            .ant-form-item-label {
+                text-align: right;
+                label {
+                    color: @primary-light;
+                }
+            }
+            .ant-form-item-control-wrappe{
+                .ant-form-item-control{
+                    text-align: left;
+                    color: rgba(0,0,0,0.80);
+                }
+            }
+        }
+    }
+    // .button-group {
+    //     display: flex;
+    //     justify-content: flex-end;
+    //     vertical-align: bottom;
+    //     button {
+    //         margin-right: 24px;
+    //         &:last-child {
+    //             margin-right: 0;
+    //         }
+    //     }
+    // }
+}
+
+.liability-header {
+    .title {
+        border-bottom: 1px dashed #E4E6ED;
+        padding-bottom: 10px;
+        margin-bottom: 24px;
+        .back {
+            display: inline-block;
+            font-size: 12px;
+        }
+        .title-text {
+            display: inline-block;
+            font-size: 16px;
+            color: #54636F;
+            font-weight: 600;
+            margin-left: 18px;
+        }
+    }
+    .details {
+        & span:nth-first {
+            color: red;
+        }
+        font-size: 14px;
+        color: #54636F;
+    }
+}
+
+// 快速产品化
+.quick-product {
+    width: @row-maxWidth;
+    position: relative;
+    .ant-form-item {
+        display: inline-block;
+        width: @item-width;
+        margin: 20px 40px 0 0;
+        padding: 0;
+        .ant-form-item-label {
+            label {
+                font-size: 12px;
+                color: @primary-light;
+            }
+        }
+        .ant-select {
+            width: @item-width;
+        }
+    }
+    h2 {
+        line-height: 22px;
+        color: #8492a6;
+        font-size: 16px;
+        margin-top: 16px;
+        margin-bottom: 10px;
+    }
+    .button-group {
+        display: inline-block;
+        vertical-align: bottom;
+        button {
+            margin-right: 35px;
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+}

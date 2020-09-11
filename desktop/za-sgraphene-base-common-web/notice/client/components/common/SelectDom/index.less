@@ -1,0 +1,18 @@
+@import '../../../style/var.less';
+//带搜索图标的选择框
+.search-select-dom{
+    position: relative;
+    z-index: 0;
+    .anticon-search{
+        position: absolute;
+        top: 2px;
+        z-index: 1;
+        font-size: 16px;
+        line-height: 30px;
+        left: 10px;
+        color: rgba(0,0,0,0.40);
+    }
+    .ant-select-selection.ant-select-selection--single{
+        padding-left: 24px;
+    }
+}
